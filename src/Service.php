@@ -145,6 +145,14 @@ class Service extends Component implements ServiceInterface
     }
 
     /**
+     * @param string $endpoint
+     */
+    public function setEndpoint(string $endpoint)
+    {
+        $this->clientConfig['endpoint'] = $endpoint;
+    }
+
+    /**
      * @param array|bool $debug
      */
     public function setDebug($debug)
